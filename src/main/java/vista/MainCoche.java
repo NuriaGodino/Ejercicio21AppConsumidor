@@ -15,7 +15,7 @@ public class MainCoche {
 		GestorCoche gc = new GestorCoche();
 		boolean iden = false;
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 2; i >= 0 ; i--) {
 			System.out.println("Introduzca su usuario");
 			String user = sc.next();
 			System.out.println("Introduzca su contraseña");
@@ -26,7 +26,7 @@ public class MainCoche {
 				System.out.println("El usuario y/o la contraseña son incorrectos");
 				System.out.println("Te quedan " + i + " intentos");
 			}else {
-				i = 4;
+				i = 0;
 			}
 		}
 
